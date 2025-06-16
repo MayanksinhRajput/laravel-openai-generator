@@ -45,10 +45,13 @@ PHP 8.2+
 Guzzle HTTP Client
 
 ###  Example Routes
-Route::get('/text', function () {
-    return OpenAI::generateText("Give a one-line Laravel tip.");
+Route::get('/ai-text', function () {
+    $content = OpenAI::generateText('Write a short poem about Laravel.');
+    return response($content);
 });
 
-Route::get('/image', function () {
-    return OpenAI::generateImage("A robotic hand holding a flower");
+
+Route::get('/ai-image', function () {
+    $content = OpenAI::generateImage('Generate Dog Photo.');
+    return response($content);
 });
