@@ -12,7 +12,9 @@ Supports:
 
 ### 1. Download & Extract
 
-Download the package and place it inside your Laravel app at: packages/mayanksinh/laravel-openai-generator
+Download the package and place it inside your Laravel app with :
+
+composer require mayanksinh/laravel-openai-generator
 
 ### 2. Update `composer.json` of Laravel app
 "repositories": [
