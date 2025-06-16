@@ -1,0 +1,32 @@
+{
+    "name": "mayanksinh/laravel-openai-generator",
+    "description": "Laravel 11/12 Library for integrating OpenAI GPT and DALL·E",
+    "type": "library",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Mayanksinh Chauhan",
+            "email": "mrajput7046@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0 || ^12.0",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "mayanksinh\\OpenAI\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "mayanksinh\\OpenAI\\OpenAIServiceProvider"
+            ],
+            "aliases": {
+                "OpenAI": "mayanksinh\\OpenAI\\Facades\\OpenAI"
+            }
+        }
+    }
+}
